@@ -1,0 +1,19 @@
+:root {
+  --header-height: 4.5rem;
+
+  /* Colors */
+  --hue: 240;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 50% 55%);
+  --base-color-second: hsl(var(--hue) 50% 48%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+  --subtitle-font-size-alt: 1rem;
+}

@@ -1,0 +1,133 @@
+#header {
+  border-bottom: 1px solid #e4e4e4;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--body-color);
+}
+
+#header.scroll {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*==== LOGO ========================*/
+.header__logo > a {
+  font: 700 1.313rem 'Poppins', sans-serif;
+  color: var(--title-color);
+}
+
+.header__logo--highlight {
+  color: var(--base-color);
+}
+
+.logo-alt span {
+  color: var(--body-color);
+}
+
+/*==== NAVIGATION ========================*/
+.header__nav--container {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--base-color);
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--base-color);
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+nav .header__menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+nav .header__menu ul {
+  display: none;
+}
+
+/*==== SHOW MENU ========================*/
+nav.show .header__menu {
+  opacity: 1;
+  visibility: visible;
+  background: var(--body-color);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+}
+
+nav.show .header__menu ul {
+  display: grid;
+}
+
+nav.show ul.grid {
+  gap: 4rem;
+}
+
+/* Toggle menu */
+.toggle {
+  color: var(--base-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+nav .icon-menu {
+  position: absolute;
+  left: 88%;
+}
+
+nav .icon-close {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -1.5rem;
+  left: 88%;
+  transition: 0.2s;
+}
+
+nav.show div.icon-menu {
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav.show div.icon-close {
+  visibility: visible;
+  opacity: 1;
+  top: 1.5rem;
+}

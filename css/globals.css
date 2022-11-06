@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 var(--subtitle-font-size) 'DM Sans', sans-serif;
+  background: var(--body-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+}

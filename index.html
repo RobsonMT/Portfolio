@@ -1,13 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
   <head>
+    <!-- PAGE INFO -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>portfolio</title>
+
+    <!-- ICONS -->
+    <link
+      rel="shortcut icon"
+      href="Assets/icons/folio.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="Assets/icomoon/style.css" />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/9189487c48.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header id="header">
+      <nav class="header__nav--container">
+        <div class="header__logo">
+          <a href="#home">
+            Robson<span class="header__logo--highlight"> F. Martins</span>
+          </a>
+        </div>
+        <!-- MENU -->
+        <div class="header__menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Inicio</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#testimonials">Projetos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /MENU -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div id="home_content" class="container grid">
+          <div class="home__image">
+            <img
+              src="Assets/images/bg.jpeg"
+              alt="mulher escovando e secando cabelo de outra mulher"
+            />
+          </div>
+
+          <div class="home__text">
+            <div class="text__box">
+              <h2 class="title">Olá , sou Robson F. Martins</h2>
+              <p class="subtitle">Software Developer</p>
+            </div>
+
+            <div class="button--green">
+              <a href="#testimonials">Acessar Projetos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider__home"></div>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="about__image">
+            <img
+              src="Assets/images/bg.jpeg"
+              alt="mesa com equipamentos de cabeleireiros"
+            />
+          </div>
+
+          <div class="about__text">
+            <h2 class="title">Sobre mim</h2>
+            <p>
+              Extremamente motivado em constante desenvolvimento tenho forte
+              interesse em implementação e solução de problemas de ‘software’,
+              de modo a alavancar minhas habilidades técnicas e contribuir para
+              eficiência de sistemas.
+            </p>
+            <br />
+            <p>
+              Busco oportunidades onde possa colocar minhas habilidades em
+              prática e colaborar com equipes de trabalho, tendo o crescimento
+              da organização e o desenvolvimento pessoal e profissional como
+              focos principais.
+            </p>
+            <br />
+          </div>
+        </div>
+      </section>
+
+      <div class="divider__about"></div>
+
+      <!-- TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Projetos</h2>
+          </header>
+
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <div class="card">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://seeleve.pages.dev/"
+                  >
+                    <div>
+                      <img
+                        src="Assets/photos/autoconhecimento.png"
+                        alt="mulher escovando e secando cabelo de outra mulher"
+                      />
+                    </div>
+                  </a>
+
+                  <h3 class="title">Autoconhecimento</h3>
+                  <p>
+                    Um site de divulgamento sobre uma série sobre o
+                    autoconhecimento da atriz Fernanda Souza e Mariah de
+                    Moraes...
+                  </p>
+
+                  <div class="github">
+                    <img src="Assets/icons/github.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <div class="card">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://pet-adoption-v1.herokuapp.com/"
+                  >
+                    <div>
+                      <img
+                        src="Assets/photos/pet-adoption.png"
+                        alt="mulher escovando e secando cabelo de outra mulher"
+                      />
+                    </div>
+                  </a>
+
+                  <h3 class="title">Pet Adoption</h3>
+                  <p>
+                    Um site criado voltado para divulgar animais disponiveis
+                    para adoção, com opção de seleção por tipo de animal e
+                    filtragem por raça..
+                  </p>
+
+                  <div class="github">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/RobsonMT/Pet-Adoption"
+                    >
+                      <img src="Assets/icons/github.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <div class="card">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://dsvendas-robsonmt.netlify.app/"
+                  >
+                    <div>
+                      <img
+                        src="Assets/photos/ds-vendas.png"
+                        alt="mulher escovando e secando cabelo de outra mulher"
+                      />
+                    </div>
+                  </a>
+
+                  <h3 class="title">DS Vendas</h3>
+                  <p>
+                    Um site criado com o intuito de poder administrar as vendas,
+                    atraves de gráficos que são alimentados por dados do
+                    backend..
+                  </p>
+
+                  <div class="github">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/RobsonMT/Project-Sds4"
+                    >
+                      <img src="Assets/icons/github.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <div class="card">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://hamburgueria-2-0-com-typescript-json-robsonmt.vercel.app/"
+                  >
+                    <div>
+                      <img
+                        src="Assets/photos/hamburgueria.png"
+                        alt="mulher escovando e secando cabelo de outra mulher"
+                      />
+                    </div>
+                  </a>
+
+                  <h3 class="title">Hamburqueria</h3>
+                  <p>
+                    Um site criado onde o usuário pode fazer autenticação para
+                    logar , adicionar items ao carrinho remover, possíveis novas
+                    features...
+                  </p>
+
+                  <div class="github">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/RobsonMT/Hamburgueria"
+                    >
+                      <img src="Assets/icons/github.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <div class="card">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://evoluna.vercel.app/"
+                  >
+                    <div>
+                      <img
+                        src="Assets/photos/evoluna.png"
+                        alt="mulher escovando e secando cabelo de outra mulher"
+                      />
+                    </div>
+                  </a>
+
+                  <h3 class="title">Evoluna</h3>
+                  <p>
+                    Um site criado para agendamento de usuário com um
+                    profissional para leitura astral tendo a opção de 3
+                    profissionais ,e horários disponíveis ..
+                  </p>
+
+                  <div class="github">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/RobsonMT/Evoluna"
+                    >
+                      <img src="Assets/icons/github.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <div class="card">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://capstone-group-3.vercel.app/"
+                  >
+                    <div>
+                      <img
+                        src="Assets/photos/re-viewers.png"
+                        alt="mulher escovando e secando cabelo de outra mulher"
+                      />
+                    </div>
+                  </a>
+
+                  <h3 class="title">Re:Viewers</h3>
+                  <p>
+                    Um site criado para usuários fãs de animes poderem ler ,
+                    possue algumas funcionalidades como edição de perfil,
+                    avaliação, opção de comenntário...
+                  </p>
+
+                  <div class="github">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/CristianTacca/re-viewers"
+                    >
+                      <img src="Assets/icons/github.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider__testimonials"></div>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="contact__text">
+            <h2 class="title">Entre em contato comigo!</h2>
+            <p class="subtitle">
+              Entre em contato comigo via whatsapp ou me envie um e-mail.
+            </p>
+            <div class="button--green">
+              <a
+                href="https://api.whatsapp.com/send?phone=+553599947009&text=Oi!"
+                target="_blank"
+                ><i class="icon-whatsapp"></i>Entrar em contato</a
+              >
+            </div>
+          </div>
+
+          <div class="contact__info">
+            <ul class="grid">
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i> 35 999947009
+              </li>
+              <li>
+                <i class="fa fa-map-marker" aria-hidden="true"></i> Nepomuceno,
+                MG
+              </li>
+              <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                rbsndev3@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider__contact"></div>
+    </main>
+
+    <footer class="section" id="footer">
+      <div class="container grid">
+        <div class="footer__text">
+          <a href="#home" class="footer__logo logo-alt"
+            >Robson <span>F. Martins</span></a
+          >
+          <p>&copy;2021 Robson F. Martins</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+        <div class="footer__social">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/robsonfernandomartins/"
+            ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ></a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:rbsndev3@gmail.com"
+            ><i class="fa fa-envelope" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN JS -->
+    <script src="js/app.js"></script>
   </body>
 </html>
