@@ -102,6 +102,8 @@
 
 .home__image {
   position: relative;
+  height: 400px;
+  width: 400px;
 }
 
 .home__image::before {
@@ -466,6 +468,11 @@
   }
 
   /* ABOUT */
+
+  #about {
+    margin-left: calc(3rem + var(--header-height));
+  }
+
   #about .container {
     margin: 0;
     grid-auto-flow: column;
