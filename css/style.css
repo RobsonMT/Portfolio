@@ -10,7 +10,7 @@
   -webkit-font-smoothing: auto;
 }
 
-.button--green > a {
+.button--purple > a {
   background: var(--base-color);
   color: var(--text-color-light);
 }
@@ -42,7 +42,7 @@
   );
 }
 
-.divider__testimonials {
+.divider__projects {
   height: 1px;
   background: linear-gradient(
     270deg,
@@ -141,7 +141,7 @@
   line-height: 1.302rem;
 }
 
-.button--green > a {
+.button--purple > a {
   height: 3.5rem;
   display: inline-flex;
   align-items: center;
@@ -151,7 +151,7 @@
   transition: background 0.3s;
 }
 
-.button--green > a:hover {
+.button--purple > a:hover {
   background: var(--base-color-alt);
 }
 
@@ -225,25 +225,29 @@
   cursor: pointer;
 }
 
-/*==== TESTIMONIALS ========================*/
-#testimonials {
+/*==== projects ========================*/
+#projects {
   background: #fff;
 }
 
-#testimonials .container {
+#projects .container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   overflow: hidden;
 }
 
-#testimonials header {
+#projects header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 0;
 }
 
-/*==== TESTIMONIALS ========================*/
+#projects .swiper-container .card {
+  cursor: grab;
+}
+
+/*==== contact ========================*/
 #contact .grid {
   gap: 4rem;
 }
@@ -252,7 +256,7 @@
   margin-bottom: 2rem;
 }
 
-#contact .button--green i {
+#contact .button--purple i {
   font-size: 1.5rem;
   margin-right: 0.625rem;
 }
@@ -328,7 +332,7 @@
   }
 
   .section header,
-  #testimonials header {
+  #projects header {
     max-width: 32.688rem;
     text-align: center;
     margin-left: auto;
@@ -365,7 +369,7 @@
     margin: auto;
   }
 
-  .button--green a {
+  .button--purple a {
     height: 3.125rem;
   }
 
@@ -407,14 +411,14 @@
   }
 
   .section header,
-  #testimonials header {
+  #projects header {
     max-width: 32.688rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .button--green a {
+  .button--purple a {
     height: 3.125rem;
   }
 
@@ -494,8 +498,8 @@
     line-height: 1.4rem;
   }
 
-  /* TESTIMONIALS */
-  #testimonials .container {
+  /* projects */
+  #projects .container {
     margin-left: auto;
     margin-right: auto;
   }
