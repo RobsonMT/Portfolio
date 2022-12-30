@@ -219,9 +219,17 @@
   margin-bottom: 0.75rem;
 }
 
-.card .github {
-  width: 30px;
+.card .links {
   height: 30px;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.card .links a img {
+  width: 30px;
   cursor: pointer;
 }
 
